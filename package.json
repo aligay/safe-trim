@@ -1,0 +1,47 @@
+{
+  "name": "safe-trim",
+  "version": "1.0.0",
+  "description": "trim sting and remove zero-width-space in content",
+  "main": "dist/safe-trim.common.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-core": "^6.13.2",
+    "html-minifier": "^3.0.2",
+    "istanbul": "^0.4.4",
+    "jasmine-node": "^1.14.5",
+    "rollup": "^0.34.7",
+    "rollup-plugin-babel": "^2.6.1",
+    "rollup-plugin-replace": "^1.1.1",
+    "uglify-js": "^2.7.0"
+  },
+  "devDependencies": {
+    "babel-preset-es2015-rollup": "^1.2.0"
+  },
+  "scripts": {
+    "test": "npm run build && npm run jasmine",
+    "build": "node build/build.js",
+    "jasmine": "jasmine-node test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haozime/safe-trim.git"
+  },
+  "keywords": [
+    "safeTrim",
+    "trim",
+    "unicode",
+    "spaces",
+    "no-break",
+    "space",
+    "zero-width-space",
+    "space"
+  ],
+  "author": "Jerry",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/haozime/safe-trim/issues"
+  },
+  "homepage": "https://github.com/haozime/safe-trim#readme"
+}
