@@ -32,3 +32,7 @@ JSON.parse('﻿{"a":1}') // ❗️Error because BOM
 
 JSON.parse(safeTrim('﻿{"a":1}')) // ✅
 ```
+
+
+## more feature
+[more feature](blob/master/test/test_spec.js)
