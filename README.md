@@ -35,4 +35,4 @@ JSON.parse(safeTrim('﻿{"a":1}')) // ✅
 
 
 ## more feature
-[more feature](blob/master/test/test_spec.js)
+[more feature](test/test_spec.js)
