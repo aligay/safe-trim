@@ -3,6 +3,11 @@
 ```
 npm install safe-trim
 ```
+## use
+```
+import safeTrim from 'safe-trim'
+safeTrim('    a      b  ')
+```
 
 ## remove Invisible spaces
 
