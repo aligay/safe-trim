@@ -17,7 +17,7 @@ let ret = safeTrim(str)
 expect(ret).toEqual('"a":1    a\n\nb')
 ```
 
-## converted CR CR-LR into LR
+## convert CR CR-LR into LR
 ```
 a\r\n\r\nb  => 'a\n\nb'
 a\r\rb => 'a\n\nb'
