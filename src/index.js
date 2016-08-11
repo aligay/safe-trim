@@ -8,7 +8,7 @@ export default function safeTrim(string) {
                            '\f' + //  \x0C FF 换页符
                            '\u200B\u200C\u200D\u200E\u200F\u000b\u2028\u2029\uFEFF'
   const OTHER_SPACE =
-    '\x09\x0C\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000'
+    '\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000'
   
   const ALL_SPACE = SP + TAB + CR + LF + CR_LF + ZERO_WIDTH_SPACE + OTHER_SPACE
 
@@ -20,10 +20,10 @@ export default function safeTrim(string) {
   return (string + '')
     .replace(leftReg, '') // trim left
     .replace(rightReg, '') // trim right
-    .replace(new RegExp(TAB, 'g'), '') // TAB => '  ' 2space
+    .replace(new RegExp(TAB, 'g'), '') // TAB => ''
     .replace(new RegExp(CR_LF, 'g'), LF) // '\r\n' => '\n'
     .replace(new RegExp(CR, 'g'), LF)  // single \r => '\n'
     .replace(zeroReg, '') // Zero-width-space => ''
     .replace(otherReg, '') // other => ''
-    .trim()
+    .trim() // safety
 }

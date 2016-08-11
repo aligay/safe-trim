@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/haozime/safe-trim.svg?branch=master)](https://travis-ci.org/haozime/safe-trim)
+[![Build Status](https://travis-ci.org/haozime/safe-trim.svg?branch=1.0.4)](https://travis-ci.org/haozime/safe-trim/branches)
 
 # safe-trim
 ## install
