@@ -141,7 +141,6 @@ function htmlMin(src, target) {
     "processScripts": [
       "text/html"
     ],
-    "removeAttributeQuotes": true,
     "removeComments": true,
     "removeEmptyAttributes": true,
     "removeOptionalTags": true,
