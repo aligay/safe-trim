@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/haozime/safe-trim.svg?branch=master)](https://travis-ci.org/haozime/safe-trim)
+
 # safe-trim
 ## install
 ```
@@ -30,3 +32,7 @@ JSON.parse('﻿{"a":1}') // ❗️Error because BOM
 
 JSON.parse(safeTrim('﻿{"a":1}')) // ✅
 ```
+
+
+## more feature
+[more feature](test/test_spec.js)
