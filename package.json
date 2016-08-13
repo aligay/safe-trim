@@ -10,6 +10,7 @@
     "babel-core": "^6.13.2",
     "babel-preset-es2015": "^6.13.2",
     "babel-preset-es2015-rollup": "^1.2.0",
+    "codecov": "^1.0.1",
     "html-minifier": "^3.0.2",
     "istanbul": "^0.4.4",
     "jasmine-node": "^1.14.5",
@@ -21,7 +22,7 @@
   "scripts": {
     "test": "npm run build && npm run jasmine",
     "build": "node build/build.js",
-    "jasmine": "jasmine-node test"
+    "jasmine": "istanbul cover jasmine-node spec && codecov"
   },
   "repository": {
     "type": "git",

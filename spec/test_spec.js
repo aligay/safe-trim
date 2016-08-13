@@ -71,7 +71,8 @@ describe('bad args', () => {
   })
   
   it('function', () => {
-    let ret = safeTrim(safeTrim(function () {})).replace(/\s+/g, '')
-    expect(ret).toEqual('function(){}')
+    let fun = () => {}
+    let ret = safeTrim(fun)
+    expect(ret).toEqual(String(fun))
   })
 })
