@@ -6,5 +6,5 @@ script:
   - "npm run test"
 
 after_script:
-  - "npm install codecov && npm run codecov"
+  - "npm install codecov &&  ./node_modules/codecov/bin/codecov && rm -rf ./coverage"
 
