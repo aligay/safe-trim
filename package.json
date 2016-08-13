@@ -21,7 +21,7 @@
   "scripts": {
     "test": "npm run build && npm run jasmine",
     "build": "node build/build.js",
-    "jasmine": "jasmine-node test"
+    "jasmine": "istanbul cover jasmine-node spec"
   },
   "repository": {
     "type": "git",
