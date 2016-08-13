@@ -1,5 +1,5 @@
 [![Build Status](https://travis-ci.org/haozime/safe-trim.svg?branch=1.0.4)](https://travis-ci.org/haozime/safe-trim/branches)
-[![Dependency Status](https://david-dm.org/haozime/safe-trim)](https://david-dm.org/haozime/safe-trim.svg)
+[![Dependency Status](https://david-dm.org/haozime/safe-trim.svg)](https://david-dm.org/haozime/safe-trim)
 
 # safe-trim
 ## install
