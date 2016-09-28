@@ -1,7 +1,7 @@
 # safe-trim
 ---
 
-[![Build Status](https://travis-ci.org/haozime/safe-trim.svg?branch=master)](https://travis-ci.org/haozime/safe-trim/branches)
+[![Build Status](https://travis-ci.org/haozime/safe-trim.svg?branch=1.0.7)](https://travis-ci.org/haozime/safe-trim/branches)
 [![codecov](https://codecov.io/gh/haozime/safe-trim/branch/master/graph/badge.svg)](https://codecov.io/gh/haozime/safe-trim)
 [![dependencies Status](https://david-dm.org/haozime/safe-trim/status.svg)](https://david-dm.org/haozime/safe-trim)
 [![devDependencies Status](https://david-dm.org/haozime/safe-trim/dev-status.svg)](https://david-dm.org/haozime/safe-trim?type=dev)
