@@ -1,6 +1,6 @@
 /*!
- * safe-trim v1.0.9
- * (c) 2016 Jerry
+ * safe-trim v1.0.10
+ * (c) 2017 Jerry
  * Released under the MIT License.
  */
 (function (global, factory) {
