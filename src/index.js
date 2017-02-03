@@ -1,4 +1,4 @@
-export default function safeTrim(string) {
+export default function safeTrim (string) {
   const SP = ' '  // common space
   const TAB = '\t' // tab
   const CR = '\r' //  Carriage Return, Used as a new line character in Mac OS before X
@@ -9,7 +9,7 @@ export default function safeTrim(string) {
                            '\u200B\u200C\u200D\u200E\u200F\u000b\u2028\u2029\uFEFF'
   const OTHER_SPACE =
     '\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000'
-  
+
   const ALL_SPACE = SP + TAB + CR + LF + CR_LF + ZERO_WIDTH_SPACE + OTHER_SPACE
 
   const leftReg = new RegExp(`^[${ALL_SPACE}]+`)
