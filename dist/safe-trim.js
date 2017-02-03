@@ -1,12 +1,12 @@
 /*!
- * safe-trim v1.0.10
+ * safe-trim v1.0.12
  * (c) 2017 Jerry
  * Released under the MIT License.
  */
 (function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.safeTrim = factory());
+	typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
+	typeof define === 'function' && define.amd ? define(factory) :
+	(global.safeTrim = factory());
 }(this, (function () { 'use strict';
 
 function safeTrim(string) {
