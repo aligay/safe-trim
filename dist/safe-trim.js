@@ -1,5 +1,5 @@
 /*!
- * safe-trim v1.0.11
+ * safe-trim v1.0.12
  * (c) 2017 Jerry
  * Released under the MIT License.
  */

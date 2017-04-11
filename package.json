@@ -1,19 +1,19 @@
 {
   "name": "safe-trim",
-  "version": "1.0.11",
+  "version": "1.0.12",
   "description": "trim sting and remove zero-width-space in content",
   "main": "dist/safe-trim.common.js",
   "directories": {
     "test": "test"
   },
   "devDependencies": {
-    "babel-core": "^6.18.2",
-    "babel-preset-es2015": "^6.18.0",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
     "babel-preset-es2015-rollup": "^3.0.0",
-    "html-minifier": "^3.2.2",
+    "html-minifier": "^3.4.3",
     "istanbul": "^0.4.5",
     "jasmine-node": "^1.14.5",
-    "rollup": "^0.41.1",
+    "rollup": "^0.41.6",
     "rollup-plugin-babel": "^2.6.1",
     "rollup-plugin-replace": "^1.1.1",
     "uglify-js": "^2.7.4"
