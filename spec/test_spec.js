@@ -1,5 +1,5 @@
 'use strict'
-
+/* eslint-disable */
 const safeTrim = require('../dist/safe-trim.common.js')
 
 describe('safeTrim', () => {
