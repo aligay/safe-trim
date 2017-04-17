@@ -1,5 +1,3 @@
-process.env.NODE_ENV = 'production'
-const rollup = require('rollup')
 import {getConfig, getGzipSize, red, blue, write, uglify, camelize} from './util'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
@@ -11,7 +9,9 @@ import replace from 'rollup-plugin-replace'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import pkg from '../package.json'
-
+process.env.NODE_ENV = 'production'
+const rollup = require('rollup')
+console.log(rollup)
 class Build {
   constructor () {
     this.config = getConfig(require('./index'), pkg)
