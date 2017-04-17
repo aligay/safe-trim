@@ -1,6 +1,6 @@
 {
   "name": "safe-trim",
-  "version": "1.1.0",
+  "version": "1.0.13",
   "description": "trim sting and remove zero-width-space in content",
   "author": "Jerry",
   "contributors": [
