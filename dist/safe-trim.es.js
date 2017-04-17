@@ -3,12 +3,6 @@
  * (c) 2017 Jerry
  * Released under the MIT License.
  */
-(function (global, factory) {
-  typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
-  typeof define === 'function' && define.amd ? define(factory) :
-  (global.safeTrim = factory());
-}(this, (function () {
-
 function safeTrim (string) {
   var SP = ' '  // common space
   var TAB = '\t' // tab
@@ -39,6 +33,4 @@ function safeTrim (string) {
     .trim() // safety
 }
 
-return safeTrim;
-
-})));
+export default safeTrim;
