@@ -1,10 +1,10 @@
 export default function safeTrim (string) {
-  const SP = ' '  // common space
+  const SP = ' ' // common space
   const TAB = '\t' // tab
   const CR = '\r' //  Carriage Return, Used as a new line character in Mac OS before X
   const LF = '\n' //  Line Feed, Used as a new line character in Unix/Mac OS X
   const CR_LF = '\r\n' // Used as a new line character in Windows
-  const ZERO_WIDTH_SPACE = '\v' +  // \x0B VT 垂直制表符
+  const ZERO_WIDTH_SPACE = '\v' + // \x0B VT 垂直制表符
                            '\f' + //  \x0C FF 换页符
                            '\u200B\u200C\u200D\u200E\u200F\u000b\u2028\u2029\uFEFF'
   const OTHER_SPACE =
@@ -22,7 +22,7 @@ export default function safeTrim (string) {
     .replace(rightReg, '') // trim right
     .replace(new RegExp(TAB, 'g'), '') // TAB => ''
     .replace(new RegExp(CR_LF, 'g'), LF) // '\r\n' => '\n'
-    .replace(new RegExp(CR, 'g'), LF)  // single \r => '\n'
+    .replace(new RegExp(CR, 'g'), LF) // single \r => '\n'
     .replace(zeroReg, '') // Zero-width-space => ''
     .replace(otherReg, '') // other => ''
     .trim() // safety

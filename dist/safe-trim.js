@@ -1,6 +1,6 @@
 /*!
- * safe-trim v1.1.0
- * (c) 2017 Jerry
+ * safe-trim v1.0.13
+ * (c) 2018 Jerry
  * Released under the MIT License.
  */
 (function (global, factory) {
@@ -10,12 +10,12 @@
 }(this, (function () {
 
 function safeTrim (string) {
-  var SP = ' '  // common space
+  var SP = ' ' // common space
   var TAB = '\t' // tab
   var CR = '\r' //  Carriage Return, Used as a new line character in Mac OS before X
   var LF = '\n' //  Line Feed, Used as a new line character in Unix/Mac OS X
   var CR_LF = '\r\n' // Used as a new line character in Windows
-  var ZERO_WIDTH_SPACE = '\v' +  // \x0B VT 垂直制表符
+  var ZERO_WIDTH_SPACE = '\v' + // \x0B VT 垂直制表符
                            '\f' + //  \x0C FF 换页符
                            '\u200B\u200C\u200D\u200E\u200F\u000b\u2028\u2029\uFEFF'
   var OTHER_SPACE =
@@ -33,7 +33,7 @@ function safeTrim (string) {
     .replace(rightReg, '') // trim right
     .replace(new RegExp(TAB, 'g'), '') // TAB => ''
     .replace(new RegExp(CR_LF, 'g'), LF) // '\r\n' => '\n'
-    .replace(new RegExp(CR, 'g'), LF)  // single \r => '\n'
+    .replace(new RegExp(CR, 'g'), LF) // single \r => '\n'
     .replace(zeroReg, '') // Zero-width-space => ''
     .replace(otherReg, '') // other => ''
     .trim() // safety

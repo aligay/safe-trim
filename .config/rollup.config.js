@@ -1,5 +1,3 @@
-process.env.NODE_ENV = 'production'
-const rollup = require('rollup')
 import {getConfig, getGzipSize, red, blue, write, uglify, camelize} from './util'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
@@ -11,6 +9,9 @@ import replace from 'rollup-plugin-replace'
 import nodeResolve from 'rollup-plugin-node-resolve'
 import commonjs from 'rollup-plugin-commonjs'
 import pkg from '../package.json'
+const rollup = require('rollup')
+
+process.env.NODE_ENV = 'production'
 
 class Build {
   constructor () {
