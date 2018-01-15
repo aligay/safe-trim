@@ -62,5 +62,5 @@ export function read (dest, code) {
 }
 
 export function uglify (code) {
-  return Uglify.minify(code, {fromString: true}).code
+  return Uglify.minify(code).code
 }
