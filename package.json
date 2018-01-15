@@ -100,10 +100,10 @@
     },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haozime/safe-trim.git"
+    "url": "git+https://github.com/haozi/safe-trim.git"
   },
   "bugs": {
-    "url": "https://github.com/haozime/safe-trim/issues"
+    "url": "https://github.com/haozi/safe-trim/issues"
   },
-  "homepage": "https://github.com/haozime/safe-trim#readme"
+  "homepage": "https://github.com/haozi/safe-trim#readme"
 }
