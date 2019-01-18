@@ -1,6 +1,6 @@
 /*!
- * safe-trim v1.0.14
- * (c) 2018 Jerry
+ * safe-trim v1.0.15
+ * (c) 2019 Jerry
  * Released under the MIT License.
  */
 (function (global, factory) {
@@ -17,7 +17,7 @@ function safeTrim (string) {
   var CR_LF = '\r\n'; // Used as a new line character in Windows
   var ZERO_WIDTH_SPACE = '\v' + // \x0B VT 垂直制表符
                            '\f' + //  \x0C FF 换页符
-                           '\u200B\u200C\u200D\u200E\u200F\u000b\u2028\u2029\uFEFF';
+                           '\u200B\u200C\u200D\u200E\u200F\u000b\u2028\u2029\uFEFF\u202D';
   var OTHER_SPACE =
     '\xA0\u1680\u180E\u2000\u2001\u2002\u2003\u2004\u2005\u2006\u2007\u2008\u2009\u200A\u202F\u205F\u3000';
 
