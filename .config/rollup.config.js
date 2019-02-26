@@ -1,4 +1,4 @@
-import {getConfig, getGzipSize, red, blue, write, uglify, camelize} from './util'
+import { getConfig, getGzipSize, red, blue, write, uglify, camelize } from './util'
 import postcss from 'postcss'
 import autoprefixer from 'autoprefixer'
 import px2rem from 'postcss-px2rem'

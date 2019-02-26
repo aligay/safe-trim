@@ -4,5 +4,4 @@
 src/
 test/
 .nyc_output/
-.script/
 coverage/
