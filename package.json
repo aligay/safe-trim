@@ -1,7 +1,25 @@
 {
   "name": "safe-trim",
-  "version": "1.0.15",
+  "version": "1.1.0",
   "description": "trim sting and remove zero-width-space in content",
+  "keywords": [
+    "no-break",
+    "safeTrim",
+    "space",
+    "spaces",
+    "trim",
+    "unicode",
+    "zero-width-space"
+  ],
+  "homepage": "https://github.com/haozi/safe-trim#readme",
+  "bugs": {
+    "url": "https://github.com/haozi/safe-trim/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haozi/safe-trim.git"
+  },
+  "license": "MIT",
   "author": "Jerry",
   "contributors": [
     "Jerry"
@@ -9,16 +27,16 @@
   "main": "dist/safe-trim.common.js",
   "module": "dist/safe-trim.es.js",
   "scripts": {
-    "start": "npm run dev",
-    "dev": "npm run clear && npm run fix && cross-env NODE_ENV=development webpack-dev-server --progress --config .config/webpack.dev.config.js --hot --inline --host 0.0.0.0 --port 8080",
-    "build": "npm run clear && cross-env NODE_ENV=production npm run lint && npm run babel-node .config/rollup.config.js",
-    "lint": "eslint --ext .js,.vue src .config scripts spec/*_spec.js",
-    "clear": "rimraf dist .nyc_output coverage; mkdirp dist",
-    "prepublish": "npm run test",
     "babel-node": "babel-node --presets es2015,es2016,es2017 --plugins transform-runtime",
+    "build": "npm run clear && cross-env NODE_ENV=production npm run lint && npm run babel-node .config/rollup.config.js",
+    "clear": "rimraf dist .nyc_output coverage; mkdirp dist",
+    "dev": "npm run clear && npm run fix && cross-env NODE_ENV=development webpack-dev-server --progress --config .config/webpack.dev.config.js --hot --inline --host 0.0.0.0 --port 8080",
     "fix": "standard src/**/*.js --fix >/dev/null 2>&1",
-    "test": "npm run build && npm run jasmine",
-    "jasmine": "istanbul cover jasmine-node spec"
+    "jasmine": "istanbul cover jasmine-node spec",
+    "lint": "eslint --ext .js,.vue src .config scripts spec/*_spec.js",
+    "prepublish": "npm run test",
+    "start": "npm run dev",
+    "test": "npm run build && npm run jasmine"
   },
   "config": {
     "ghooks": {
@@ -26,22 +44,6 @@
       "pre-push": "git status"
     }
   },
-  "ava": {
-    "require": [
-      "./test/helpers/setup-browser-env.js"
-    ]
-  },
-  "keywords": [
-    "safeTrim",
-    "trim",
-    "unicode",
-    "spaces",
-    "no-break",
-    "space",
-    "zero-width-space",
-    "space"
-  ],
-  "license": "MIT",
   "devDependencies": {
     "autoprefixer": "^9.4.9",
     "ava": "^1.2.1",
@@ -61,6 +63,7 @@
     "eslint-loader": "^2.1.2",
     "eslint-plugin-flow-vars": "^0.5.0",
     "eslint-plugin-html": "^5.0.3",
+    "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^8.0.1",
     "eslint-plugin-promise": "^4.0.1",
     "eslint-plugin-standard": "^4.0.0",
@@ -94,15 +97,11 @@
     "webpack": "^4.29.5",
     "webpack-dev-server": "^3.2.1",
     "webpack-merge": "^4.1.1",
-    "webpack-notifier": "^1.4.1",
-    "eslint-plugin-import": "^2.16.0"
+    "webpack-notifier": "^1.4.1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/haozi/safe-trim.git"
-  },
-  "bugs": {
-    "url": "https://github.com/haozi/safe-trim/issues"
-  },
-  "homepage": "https://github.com/haozi/safe-trim#readme"
+  "ava": {
+    "require": [
+      "./test/helpers/setup-browser-env.js"
+    ]
+  }
 }
