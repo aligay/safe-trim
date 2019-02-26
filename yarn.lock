@@ -7691,9 +7691,9 @@ safe-regex@^1.1.0:
     ret "~0.1.10"
 
 safe-trim@^1.0.11:
-  version "1.0.15"
-  resolved "https://registry.npmjs.org/safe-trim/-/safe-trim-1.0.15.tgz#4b9dab53a60accc172038181d387b42b7bf76b89"
-  integrity sha512-DaUi6nIfA8d2dQBzwWy/G5Hg5Y7VxhrOo0gXRGFHeh2YZUV6McQ/n2/UUYNKCDYqbH0rcV/xZqrqProykruF6g==
+  version "1.1.0"
+  resolved "https://registry.npmjs.org/safe-trim/-/safe-trim-1.1.0.tgz#0bee4a8caa98ff95e10202ad96353a2761d9f604"
+  integrity sha512-auaPgrBT8QBb01RayDtFmE5yBVEk9JCMdTEXdCzSzSOOtgwB8+voTbnLRb9Anbpk2CwSku89bbyFc2pOeJC+HQ==
 
 "safer-buffer@>= 2.1.2 < 3", safer-buffer@^2.0.2, safer-buffer@^2.1.0, safer-buffer@~2.1.0:
   version "2.1.2"

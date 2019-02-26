@@ -11,13 +11,13 @@
     "unicode",
     "zero-width-space"
   ],
-  "homepage": "https://github.com/haozi/safe-trim#readme",
+  "homepage": "https://github.com/aligay/safe-trim#readme",
   "bugs": {
-    "url": "https://github.com/haozi/safe-trim/issues"
+    "url": "https://github.com/aligay/safe-trim/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/haozi/safe-trim.git"
+    "url": "git+https://github.com/aligay/safe-trim.git"
   },
   "license": "MIT",
   "author": "Jerry",
