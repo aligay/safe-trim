@@ -1,7 +1,7 @@
 # safe-trim
 ---
 
-[![Build Status](https://travis-ci.org/aligay/safe-trim.svg?branch=1.0.15)](https://travis-ci.org/aligay/safe-trim/branches)
+[![Build Status](https://travis-ci.org/aligay/safe-trim.svg?branch=master)](https://travis-ci.org/aligay/safe-trim/branches)
 [![codecov](https://codecov.io/gh/aligay/safe-trim/branch/master/graph/badge.svg)](https://codecov.io/gh/aligay/safe-trim)
 [![dependencies Status](https://david-dm.org/aligay/safe-trim/status.svg)](https://david-dm.org/aligay/safe-trim)
 [![devDependencies Status](https://david-dm.org/aligay/safe-trim/dev-status.svg)](https://david-dm.org/aligay/safe-trim?type=dev)
