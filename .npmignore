@@ -1,7 +1,0 @@
-.DS_Store
-.idea/
-*.log
-src/
-test/
-.nyc_output/
-coverage/
