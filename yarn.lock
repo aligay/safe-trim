@@ -4502,6 +4502,11 @@ icss-utils@^4.0.0:
   dependencies:
     postcss "^7.0.5"
 
+idmp@*:
+  version "1.9.0"
+  resolved "https://bnpm.byted.org/idmp/-/idmp-1.9.0.tgz#7cdc70cd578e8cdc7feb1ed00e3369c97ba9b709"
+  integrity sha512-UBAXaoE6URaCjKKVEGmNxJdMIONUnTT7FxgYZj2O3jEDS4b2M0gNFRNsJvbf+RW+3wa1QNB9Ux7eKKbsDG803w==
+
 ieee754@^1.1.4:
   version "1.1.12"
   resolved "https://registry.npmjs.org/ieee754/-/ieee754-1.1.12.tgz#50bf24e5b9c8bb98af4964c941cdb0918da7b60b"

@@ -15,6 +15,9 @@ describe('safeTrim', () => {
     expect(ret).toEqual('"a":1    a\n\nb')
   })
 
+  it('trim 2', () => {
+    expect(safeTrim('throw new Error("⁧;("⁧')).toEqual('throw new Error(";("')
+  })
   it('converted CR CR-LR into LR', () => {
     // safeTrim('\r\n') === ''
     expect(safeTrim('   a\r\n\r\nb  ')).toEqual('a\n\nb')

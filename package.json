@@ -1,6 +1,6 @@
 {
   "name": "safe-trim",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "trim sting and remove zero-width-space in content",
   "keywords": [
     "no-break",
@@ -103,5 +103,8 @@
     "require": [
       "./test/helpers/setup-browser-env.js"
     ]
+  },
+  "dependencies": {
+    "idmp": "*"
   }
 }
